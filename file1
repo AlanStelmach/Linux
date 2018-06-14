@@ -1,0 +1,110 @@
+/*
+#include <stdlib.h> //do exit
+#include <stdio.h> //do printfa
+#include <fcntl.h> //do creat
+#include <errno.h> //do errora
+#include <unistd.h> //do debiana
+#include <string.h> //do napisow
+*/
+
+//zad1- utworzenie pliku Test
+#include <stdio.h>
+#include <fcntl.h>
+
+int main()
+{
+int fd;
+if((fd=creat("Test", 0640))==1)
+{
+fd=creat("Test", 0640);
+}
+if(fd==-1)
+{
+printf("Blad otworzenia pliku docelowego");
+return 1;
+}
+printf("%d", fd);
+close(fd);
+return 0;
+}
+
+//gcc -o nazwa plik.c -kompiluje plik.c pod nazwą nazwa
+//./ nazwa -wyswietla go na ekranie konsoli
+
+//zad2a -otwiera plik
+#include <stdio.h>
+#include <fcntl.h> 
+#include <errno.h>
+#include <unistd.h>
+
+int main()
+{
+    int fd;
+    if((fd=open("Test",O_WRONLY|O_CREAT|O_TRUNC, 0640))==-1)
+    {
+        int x=errno;
+        printf("%d", x);
+        printf("blad");
+        return 1;
+    }
+    printf("%d", fd);
+    close(fd);
+    return 0;
+}
+
+//zad 2b -otwiera plik
+
+#include <stdio.h>
+#include <fcntl.h>
+#include <errno.h>
+#include <unistd.h>
+int main()
+{
+    int fd;
+    if((fd=open("Test",O_WRONLY|O_CREAT|O_EXCL, 0640))==-1)
+    {
+        perror("Blad otworzenia pliku docelowego");
+        return 1;
+    }
+    printf("%d", fd);
+    close(fd);
+    return 0;
+}
+
+//zad 2c - otwiera plik
+#include <stdio.h>
+#include <fcntl.h>
+#include <errno.h>
+#include <unistd.h>
+#include <stdlib.h>
+#include <string.h>
+void p_error(const char *str)
+{
+    fprintf(stderr, "%s : %s\n", str, strerror(errno));
+    return;
+}
+
+int main()
+{
+    int fd;
+    if((fd=open("Test",O_WRONLY|O_CREAT|O_TRUNC, 0640))==-1)
+    {
+        p_error("blad");
+        return 1;
+    }
+    printf("%d", fd);
+    close(fd);
+    return 0;
+}
+
+//zad5
+
+//ZEROWKA
+6 zadan, 5 rachunkowych bardziej pkt, 1 opisowe mniej pkt
+problem jakichs filozofow-teoria
+zarzadzanie pamiecia
+mapowanie adresu fizycznego na logiczny + binarny
+zakleszczenie, algorytm kogostam
+porownac 2 algorytmy szeregowania procesu sjf i rotacyjny, ktory bardziej wydajny
+algorytmy typu LIFO lub MFU i podac ile bledow strony sie wyswietli majac konkretna ilosc pamieci
+algorytmy blizniacze
