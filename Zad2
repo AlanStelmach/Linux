@@ -1,5 +1,6 @@
 /*PRZYKŁAD B
-Napisz program, który będzie wstawiał do pliku napis "Ala ma kota" w miejsce o 5 pozycji dalej niż aktualna pozycja. Program ma wyświetlać zawartość pierwotną oraz zawartość zmienioną pliku na standardowym wyjściu.
+Napisz program, który będzie wstawiał do pliku napis "Ala ma kota" w miejsce o 5 pozycji dalej niż aktualna pozycja. 
+Program ma wyświetlać zawartość pierwotną oraz zawartość zmienioną pliku na standardowym wyjściu.
 obsługę błędnej ilości podanych argumentów programu
 kod błędu (-1) przy operacjach na plikach
 wykorzystaj funkcję exit przy zakończeniu programu
