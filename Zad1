@@ -1,5 +1,8 @@
 /*PRZYKŁAD A
-Napisz program, który będzie wczytywał ze standardowego strumienia 10 bajtów. Zakończenie podawania znaków ma realizować naciśnięcie klawisza Enter. Po pobraniu znaków mają one zostać zapisane do pliku. Należy wyświetlić ilość bajtów zapisanych i odczytanych oraz znaki zapisane do pliku.
+Napisz program, który będzie wczytywał ze standardowego strumienia 10 bajtów. 
+Zakończenie podawania znaków ma realizować naciśnięcie klawisza Enter. 
+Po pobraniu znaków mają one zostać zapisane do pliku. Należy wyświetlić ilość bajtów zapisanych i 
+odczytanych oraz znaki zapisane do pliku.
 obsługa błędnej ilości podanych argumentów programu
 kod błędu (-1) przy operacjach na plikach
 wykorzystaj funkcję exit przy zakończeniu programu
