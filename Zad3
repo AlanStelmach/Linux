@@ -1,5 +1,7 @@
 /*PRZYKŁAD C
-Napisz program do kopiowania pliku.  Nazwy plików przekazywane maja być jako argumenty w linii poleceń przy uruchamianiu programu. Pierwszy argument to nazwa istniejącego pliku źródłowego, drugi argument to nazwa pliku docelowego do utworzenia. Uwzględnij:
+Napisz program do kopiowania pliku.  Nazwy plików przekazywane maja być jako argumenty w linii poleceń przy uruchamianiu
+programu. Pierwszy argument to nazwa istniejącego pliku źródłowego, drugi argument to nazwa pliku docelowego do utworzenia. 
+Uwzględnij:
 obsługę błędnej ilości podanych argumentów programu
 kod błędu (-1) przy operacjach na plikach
 wykorzystaj funkcję exit przy zakończeniu programu
