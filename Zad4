@@ -15,9 +15,9 @@ int main(int argc, char* argv[])
     int desc;
     long rozm;
 
-    if(argc>2 || argc<1)
+    if(argc<2)
     {
-        fprintf(stderr,"za malo/duzo arg");
+        fprintf(stderr,"za malo arg");
         exit(1);
     }
 
