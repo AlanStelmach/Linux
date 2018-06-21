@@ -4,6 +4,6 @@
 
 void p_error(const char *str)
 {
-frprintf(stderr, %s: %s\n", str, sterror(errno));
+fprintf(stderr, %s: %s\n", str, sterror(errno));
 //return;
 }
