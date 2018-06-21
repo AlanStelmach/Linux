@@ -2,8 +2,7 @@
 #include <stdio.h>
 #include <string.h>
 
-void p_error(const char *str)
+void p_error(const char *s)
 {
-fprintf(stderr, %s: %s\n", str, sterror(errno));
-//return;
+fprintf(stderr,"%s: %s\n", s, strerror(errno));
 }
